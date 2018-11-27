@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 
 namespace Daily_Report_Project
@@ -16,8 +16,7 @@ namespace Daily_Report_Project
             string whatPage = Console.ReadLine();
             int pageNumber = Convert.ToInt32(whatPage);
             Console.WriteLine("Do you need help with anything? Please answer 'true' or 'false'. ");
-            bool needHelp = true;
-            Console.ReadLine();
+            string needHelp = Console.ReadLine();
             Console.WriteLine("Were there any positive experiences you'd like to share? Please give specifics.");
             string experiences = Console.ReadLine();
             Console.WriteLine("Is there any other feedback you'd like to provide? Please be specific.");
@@ -26,8 +25,8 @@ namespace Daily_Report_Project
             string studiedFor = Console.ReadLine();
             int studyHours = Convert.ToInt32(studiedFor);
             Console.Write("Thank you for your answers. An instructor will respond to this shortly. Have a great day!");
-            Console.ReadKey(); 
-           
+            Console.ReadKey();
+
         }
-        }
+    }
 }
